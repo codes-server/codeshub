@@ -4,5 +4,10 @@
   </head>
   <body>
     <h1>Welcome to Codeshub</h1>
+    <% if (user) { %> 
+      <a href="/dashboard">Open</a>
+    <% } else { %> 
+      <a href="/login">login</a> or <a href="/join">create account</a>
+    <% } %>
   </body>
 </html>
